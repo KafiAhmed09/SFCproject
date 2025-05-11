@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Summary</h1>
+        <h3>Parcel Details:</h3>
+        <p><strong>Merchant:</strong> {{ order.parcel.merchant.name }}</p>
+        <p><strong>Parcel Type:</strong> {{ order.parcel.product_type }}</p>
+        <p><strong>Weight:</strong> {{ order.parcel.weight }} kg</p>
+
+        <h3>Charges:</h3>
+        <p><strong>Total Charge:</strong> {{ order.total_charge }} Taka</p>
+        <p><strong>COD Charge:</strong> {{ order.cod_charge }} Taka</p>
+        <p><strong>Return Charge:</strong> {{ order.return_charge }} Taka</p>
+
+        <a href="{% url 'create_order' %}" class="btn btn-primary">Create Another Order</a>
+    </div>
+</body>
+</html>
