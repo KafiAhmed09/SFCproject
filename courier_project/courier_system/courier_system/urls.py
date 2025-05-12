@@ -21,5 +21,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('parcel/', include('parcel.urls')),  # Add this line to include parcel app URLs
+    path('parcel/', include('parcel.urls')),  
 ]
