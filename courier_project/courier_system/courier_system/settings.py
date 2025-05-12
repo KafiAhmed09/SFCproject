@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -27,11 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'humorous-prepared-shrimp.ngrok-free.app']
 
-# Add the ngrok URL to trusted origins
+# Add the ngrok URL
 CSRF_TRUSTED_ORIGINS = ['https://humorous-prepared-shrimp.ngrok-free.app']
 
 
-# Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
