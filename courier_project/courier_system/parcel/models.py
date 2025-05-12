@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 from django.db import models
 
 # Merchant Model
@@ -73,7 +73,7 @@ class Order(models.Model):
             self.cod_charge = self.total_charge * 0.01
             self.return_charge = self.total_charge * 0.5
         
-        # Update the total charge after COD and return charge calculation
+        # Update for the total charge after COD and return charge calculation
         self.total_charge += self.cod_charge + self.return_charge
         self.save()
 
